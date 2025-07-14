@@ -1,0 +1,121 @@
+body {
+  font-family: 'Lato', sans-serif;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.grid-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  margin-bottom: 50px;
+}
+
+.semestre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #c4c4c4;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  min-width: 160px;
+}
+
+.materia {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+  width: 120px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.habilitada {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.no-habilitada {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.tachado {
+  text-decoration: line-through;
+}
+
+.basico { background-color: #d0e9ff; }
+.civil { background-color: #c5efb3; }
+.penal { background-color: #ebbfff; }
+.procesal { background-color: #fadae7; }
+.comercial { background-color: #ffd9a1; }
+.familia { background-color: #fbffac; }
+.procesalpenal { background-color: #c8fde7; }
+.itinerario { background-color: #f6f6d3; }
+.otros { background-color: #e8e8e8; color: #333; }
+
+.itinerarios {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.itinerarios button {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.itinerario-cuadros {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.itinerario-cuadros .materia {
+  width: 160px;
+}
+
+/* --- CORREGIDO ESTILO ITINERARIOS --- */
+.itinerarios-tablas {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.itinerarios-tablas .contenedor-tabla {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  min-width: 180px;
+}
+
+.itinerarios-tablas table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.itinerarios-tablas th,
+.itinerarios-tablas td {
+  padding: 10px;
+  text-align: center;
+  background-color: #e8e8e8;
+  border-radius: 5px;
+}
+
+.itinerarios-tablas caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+}

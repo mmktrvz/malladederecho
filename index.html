@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Malla Curricular Derecho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1 class="titulo">Malla Curricular - Derecho</h1>
+
+        <div class="grid-container">
+
+            <div class="semestre">
+                <h3>Semestre 1</h3>
+                <div class="materia otros" onclick="tachar(this)">Conocimiento, Palabra y Cambio Social</div>
+                <div class="materia otros" onclick="tachar(this)">Teoría Social</div>
+                <div class="materia otros" onclick="tachar(this)">Pensamientos Políticos</div>
+                <div id="m1" class="materia habilitada basico" data-siguiente="m2" onclick="habilitar(this)">Fundamentos del Derecho</div>
+                <div class="materia otros" onclick="tachar(this)">Actores Sociales y Desarrollo</div>
+                <div class="materia otros" onclick="tachar(this)">Introducción a las Relaciones Internacionales</div>
+            </div>
+
+            <div class="semestre">
+                <h3>Semestre 2</h3>
+                <div class="materia otros" onclick="tachar(this)">Fundamentos de la Investigación</div>
+                <div class="materia otros" onclick="tachar(this)">Teoría del Estado</div>
+                <div class="materia otros" onclick="tachar(this)">Procesos Sociales y Políticos de América Latina</div>
+                <div id="m2" class="materia no-habilitada basico" data-siguiente="m3" onclick="habilitar(this)">Derecho Constitucional</div>
+                <div class="materia otros" onclick="tachar(this)">Economía y Sociedad</div>
+                <div class="materia otros" onclick="tachar(this)">Historia y Sociología del Derecho</div>
+            </div>
+
+            <div class="semestre">
+                <h3>Semestre 3</h3>
+                <div class="materia otros" onclick="tachar(this)">Jesucristo y Aprendizajes Vitales</div>
+                <div class="materia otros" onclick="tachar(this)">Teoría y Filosofía de la Justicia</div>
+                <div class="materia otros" onclick="tachar(this)">Derecho Romano</div>
+                <div id="m3" class="materia no-habilitada basico" data-siguiente="m4" onclick="habilitar(this)">Derecho Administrativo</div>
+                <div id="m33" class="materia habilitada procesal" data-siguiente="m34" onclick="habilitar(this)">Derecho Procesal Orgánico</div>
+                <div id="m39" class="materia habilitada penal" data-siguiente="m40" onclick="habilitar(this)">Introducción al Derecho Penal</div>
+            </div>
+
+            <div class="semestre">
+                <h3>Semestre 4</h3>
+                <div id="m4" class="materia no-habilitada basico" onclick="habilitar(this)">Derecho Internacional Público</div>
+                <div id="m20" class="materia habilitada civil" data-siguiente="m22" onclick="habilitar(this)">Objetos del Derecho</div>
+                <div id="m21" class="materia habilitada familia" data-siguiente="m24" onclick="habilitar(this)">Sujetos del Derecho</div>
+                <div class="materia otros" onclick="tachar(this)">Derechos Humanos</div>
+                <div id="m34" class="materia no-habilitada procesal" data-siguiente="m35" onclick="habilitar(this)">Teoría General del Proceso</div>
+                <div id="m40" class="materia no-habilitada penal" data-siguiente="m41" onclick="habilitar(this)">Teoría del Delito</div>
+            </div>
+
+            <div class="semestre">
+                <h3>Semestre 5</h3>
+                <div class="materia otros" onclick="tachar(this)">Ética e Interculturalidad</div>
+                <div class="materia otros" onclick="tachar(this)">Derecho Laboral</div>
+                <div id="m22" class="materia no-habilitada civil" data-siguiente="m23" onclick="habilitar(this)">Obligaciones</div>
+                <div id="m24" class="materia no-habilitada familia" onclick="habilitar(this)">Derecho de Familia y Niñez</div>
+                <div id="m35" class="materia no-habilitada procesal" data-siguiente="m36" onclick="habilitar(this)">Teoría de la Prueba y Recurso</div>
+                <div id="m41" class="materia no-habilitada penal" data-siguiente="m43" onclick="habilitar(this)">Derecho Penal Ejecutivo</div>
+            </div>
+
+            <div class="semestre">
+                <h3>Semestre 6</h3>
+                <div class="materia otros" onclick="tachar(this)">Ecología Integral</div>
+                <div class="materia otros" onclick="tachar(this)">Derecho Ambiental</div>
+                <div id="m23" class="materia no-habilitada civil" data-siguiente="m26" onclick="habilitar(this)">Negocios Jurídicos</div>
+                <div id="m36" class="materia no-habilitada procesal" data-siguiente="m37" onclick="habilitar(this)">Derecho Procesal Constitucional</div>
+                <div id="m42" class="materia habilitada procesalpenal" data-siguiente="m44" onclick="habilitar(this)">Derecho Procesal Penal</div>
+                <div id="m43" class="materia no-habilitada penal" onclick="habilitar(this)">Delitos en Particular</div>
+            </div>
+
+            <div class="semestre">
+                <h3>Semestre 7</h3>
+                <div class="materia otros" onclick="tachar(this)">Procesos en Sede Administrativa</div>
+                <div class="materia otros" onclick="tachar(this)">Derecho Tributario</div>
+                <div id="m26" class="materia no-habilitada civil" onclick="habilitar(this)">Teoría de la Responsabilidad</div>
+                <div id="m37" class="materia no-habilitada procesal" onclick="habilitar(this)">Técnicas de Litigación Oral</div>
+                <div id="m44" class="materia no-habilitada procesalpenal" onclick="habilitar(this)">Procedimientos Penales Especiales</div>
+                <div class="materia otros" onclick="tachar(this)">Métodos Alternativos de Solución de Conflictos</div>
+            </div>
+        
+        <div class="semestre">
+            <h3>Semestre 8</h3>
+            <div class="materia otros" onclick="tachar(this)">Seminario de Titulación</div>
+            <div id="m50" class="materia habilitada itinerario" data-siguiente="m52" onclick="habilitar(this)">Asignatura 1 (Itinerario)</div>
+            <div id="m51" class="materia habilitada itinerario" data-siguiente="m53" onclick="habilitar(this)">Asignatura 2 (Itinerario)</div>
+            <div class="materia otros" onclick="tachar(this)">Derecho Sucesorio</div>
+            <div id="m60" class="materia habilitada comercial" data-siguiente="m61" onclick="habilitar(this)">Derecho Mercantil</div>
+            <div class="materia otros" onclick="tachar(this)">Argumentación Jurídica</div>
+        </div>
+
+        <div class="semestre">
+            <h3>Semestre 9</h3>
+            <div class="materia otros" onclick="tachar(this)">Interacción Curricular</div>
+            <div id="m52" class="materia no-habilitada itinerario" onclick="habilitar(this)">Asignatura 3 (Itinerario)</div>
+            <div id="m53" class="materia no-habilitada itinerario" onclick="habilitar(this)">Asignatura 4 (Itinerario)</div>
+            <div class="materia otros" onclick="tachar(this)">Derecho Internacional Privado</div>
+            <div id="m61" class="materia no-habilitada comercial" onclick="habilitar(this)">Derecho Societario</div>
+            <div class="materia otros" onclick="tachar(this)">Derechos Inmateriales</div>
+        </div>
+    </div>
+    </div>
+        <h2>Itinerarios</h2>
+        <div class="itinerarios-tablas">
+            <div class="contenedor-tabla">
+                <table>
+                    <caption>Itinerario I: Gestión Pública</caption>
+                    <tr><th>Asignatura</th><th>Semestre</th></tr>
+                    <tr><td>Políticas y Ética Pública</td><td>8</td></tr>
+                    <tr><td>Contratación Pública</td><td>8</td></tr>
+                    <tr><td>Normas de Responsabilidad y Control</td><td>9</td></tr>
+                    <tr><td>Técnicas de Evaluación de Impacto</td><td>9</td></tr>
+                </table>
+                <button onclick="seleccionarItinerario(1)">Asignar Itinerario I</button>
+            </div>
+
+            <div class="contenedor-tabla">
+                <table>
+                    <caption>Itinerario II: Derecho Empresarial</caption>
+                    <tr><th>Asignatura</th><th>Semestre</th></tr>
+                    <tr><td>Gobierno Corporativo</td><td>8</td></tr>
+                    <tr><td>Derecho de Competencia</td><td>8</td></tr>
+                    <tr><td>Derechos y Nuevas Tecnologías</td><td>9</td></tr>
+                    <tr><td>Compliance</td><td>9</td></tr>
+                </table>
+                <button onclick="seleccionarItinerario(2)">Asignar Itinerario II</button>
+            </div>
+
+            <div class="contenedor-tabla">
+                <table>
+                    <caption>Itinerario III: Paz y Conflicto</caption>
+                    <tr><th>Asignatura</th><th>Semestre</th></tr>
+                    <tr><td>Estudios de Paz y Justicia Transnacional</td><td>8</td></tr>
+                    <tr><td>Security and Conflict</td><td>8</td></tr>
+                    <tr><td>Violence and Human Rights</td><td>9</td></tr>
+                    <tr><td>Métodos Alternativos de Solución de Conflictos Internacionales</td><td>9</td></tr>
+                </table>
+                <button onclick="seleccionarItinerario(3)">Asignar Itinerario III</button>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+    </body>
+    </html>
